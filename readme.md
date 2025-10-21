@@ -39,6 +39,8 @@ python -m http.server 8000
 # Using Node.js (if you have http-server installed)
 npx http-server
 
+<img width="1387" height="712" alt="Screenshot 2025-10-22 at 8 53 46 am" src="https://github.com/user-attachments/assets/c1f553b9-15e5-4fc6-8370-74edba22c788" />
+
 # Using PHP
 php -S localhost:8000
 ```
