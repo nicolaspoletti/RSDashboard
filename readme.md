@@ -31,21 +31,6 @@ cd property-dashboard
 2. **Open in browser:**
 Simply open `index.html` in your web browser. No build process required!
 
-Alternatively, use a local server:
-```bash
-# Using Python 3
-python -m http.server 8000
-
-# Using Node.js (if you have http-server installed)
-npx http-server
-
-<img width="1387" height="712" alt="Screenshot 2025-10-22 at 8 53 46 am" src="https://github.com/user-attachments/assets/c1f553b9-15e5-4fc6-8370-74edba22c788" />
-
-# Using PHP
-php -S localhost:8000
-```
-
-Then navigate to `http://localhost:8000`
 
 ## Screenshot
 <img width="1387" height="712" alt="Screenshot 2025-10-22 at 8 53 46 am" src="https://github.com/user-attachments/assets/eef0f221-c853-45e6-b614-7d0c6a134dbd" />
