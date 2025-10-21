@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belmont North Property Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Loading State -->
+        <div id="loading" class="loading-screen">
+            <div class="loader"></div>
+            <p>Loading properties...</p>
+        </div>
+
+        <!-- Main Content -->
+        <div id="content" class="hidden">
+            <!-- Header -->
+            <header class="header">
+                <div class="container">
+                    <div class="header-content">
+                        <div class="header-left">
+                            <div class="header-title">
+                                <svg class="icon-large" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                                </svg>
+                                <h1>Belmont North</h1>
+                            </div>
+                            <p class="subtitle">Premium Property Market Overview</p>
+                        </div>
+                        <div class="header-right">
+                            <button class="view-btn active" data-view="grid">Grid</button>
+                            <button class="view-btn" data-view="list">List</button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Stats Section -->
+            <section class="stats-section">
+                <div class="container">
+                    <div class="stats-grid">
+                        <div class="stat-card stat-emerald">
+                            <div class="stat-header">
+                                <svg class="icon-large" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                    <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                                </svg>
+                                <span class="stat-value" id="total-listings">0</span>
+                            </div>
+                            <p class="stat-label">Active Listings</p>
+                        </div>
+
+                        <div class="stat-card stat-cyan">
+                            <div class="stat-header">
+                                <svg class="icon-large" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <line x1="12" y1="1" x2="12" y2="23"></line>
+                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                                </svg>
+                                <span class="stat-value" id="avg-price">$0</span>
+                            </div>
+                            <p class="stat-label">Average Price</p>
+                        </div>
+
+                        <div class="stat-card stat-purple">
+                            <div class="stat-header">
+                                <svg class="icon-large" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M2 4v16"></path>
+                                    <path d="M2 8h18a2 2 0 0 1 2 2v10"></path>
+                                    <path d="M2 17h20"></path>
+                                    <path d="M6 8v9"></path>
+                                </svg>
+                                <span class="stat-value" id="avg-bedrooms">0</span>
+                            </div>
+                            <p class="stat-label">Avg Bedrooms</p>
+                        </div>
+
+                        <div class="stat-card stat-orange">
+                            <div class="stat-header">
+                                <svg class="icon-large" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                                    <polyline points="16 7 22 7 22 13"></polyline>
+                                </svg>
+                                <span class="stat-value" id="price-range">$0</span>
+                            </div>
+                            <p class="stat-label">Price Range</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Properties Grid -->
+            <section class="properties-section">
+                <div class="container">
+                    <div id="properties-container" class="properties-grid"></div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Modal -->
+        <div id="modal" class="modal hidden">
+            <div class="modal-backdrop"></div>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 id="modal-title"></h2>
+                    <button class="modal-close" id="modal-close">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+                <div class="modal-body" id="modal-body"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
