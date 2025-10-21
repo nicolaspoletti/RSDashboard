@@ -48,3 +48,7 @@ php -S localhost:8000
 Then navigate to `http://localhost:8000`
 
 ## Project Structure
+<img width="1387" height="712" alt="Screenshot 2025-10-22 at 8 53 46 am" src="https://github.com/user-attachments/assets/eef0f221-c853-45e6-b614-7d0c6a134dbd" />
+
+
+
